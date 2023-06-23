@@ -4,33 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="mob.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css"
     />
-    <title>personal webpage</title>
+    <title>My portfolio</title>
   </head>
   <body>
-    <header class="header">
-      <a href="#" class="logs">MY WEBSITE</a>
-      <nav class="navbar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Skill</a>
-        <a href="#">Contact</a>
-      </nav>
-    </header>
-    <section class="home">
-      <div class="home-content">
-        <h3>Hello!</h3>
-        <h2>ASWIN BABU K V</h2>
-        <div class="socialmedia">
-          <a href="#"><i class="bx bxl-facebook"></i></a>
-          <a href="#"><i class="bx bxl-instagram-alt"></i></a>
-          <a href="#"><i class="bx bxl-twitter"></i></a>
-          <a href="#"><i class="bx bxl-github"></i></a>
+    <script src="script.js"></script>
+    <nav id="desktop-nav">
+      <div class="logo">ASWIN BABU K V</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">ASWIN BABU K V</div>
+      <div class="hamburger-menu">
+        <div class="humburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skill" onclick="toggleMenu()">Skill</a></li>
+          <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
+    </nav>
+    <section id="home">
+      <div class="pic"><img src="profile.jpg" alt="profile picture" /></div>
     </section>
   </body>
 </html>

@@ -3,6 +3,22 @@
   padding: 0;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #0c0c65; /* Background color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent; /* Color of the scrollbar thumb */
+  border-radius: 5px; /* Rounded corners of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: grey; /* Color of the scrollbar thumb on hover */
+}
 body {
   color: rgb(255, 255, 255);
   background-size: cover;
@@ -141,7 +157,7 @@ img {
   display: flex;
   height: 300px;
   width: 300px;
-  margin: auto;
+  margin: 120px 100px 10px 5px;
 }
 .hometext {
   align-self: center;

@@ -38,6 +38,14 @@ a,
 .btn {
   transition: all 300ms ease;
 }
+#desktop-nav,
+#hamburger-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
 nav,
 .nav-links {
   display: flex;
@@ -47,6 +55,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 10vh;
+  top: 0;
+  left: 0;
 }
 .nav-links {
   gap: 2rem;
@@ -147,8 +157,14 @@ section {
 #home {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 5rem;
-  height: 80vh;
+  height: 100vh;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  padding-bottom: 100px;
 }
 img {
   border-radius: 70%;
@@ -157,7 +173,7 @@ img {
   display: flex;
   height: 300px;
   width: 300px;
-  margin: 120px 100px 10px 5px;
+  margin: 120px 100px 100px 5px;
 }
 .hometext {
   align-self: center;
@@ -197,4 +213,56 @@ img {
 }
 .socialmedia a:hover {
   color: blanchedalmond;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pic {
+  margin-bottom: 1rem;
+  animation-name: slide-in-left;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.hometext {
+  margin-top: 1rem;
+  animation-name: slide-in-right;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.arrow:hover {
+  background-color: #666;
+}
+
+.arrow i {
+  font-size: 24px;
+}
+#about {
 }

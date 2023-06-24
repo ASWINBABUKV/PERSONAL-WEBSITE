@@ -6,3 +6,72 @@
     display: flex;
   }
 }
+/* mob.css or your custom CSS file */
+/* Styles for smaller screens */
+
+@media only screen and (max-width: 768px) {
+  #home {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .pic {
+    margin-bottom: 1.5rem;
+    animation-name: move-up;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    max-width: 200px; /* Adjust the value to your desired image size */
+  }
+
+  @keyframes move-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hometext {
+    margin-top: 1rem;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    font-size: 14px; /* Adjust the value to your desired text size */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; /* Adjust the value to your desired spacing between text elements */
+  }
+
+  .hometitle {
+    font-size: 24px; /* Adjust the value to your desired text size */
+    margin-bottom: 0.5rem;
+  }
+
+  .socialmedia {
+    font-size: 20px; /* Adjust the value to your desired text size */
+  }
+
+  .logo {
+    font-size: 18px; /* Adjust the value to your desired text size */
+  }
+
+  .nav-links li a {
+    font-size: 16px; /* Adjust the value to your desired text size */
+  }
+
+  .pic img {
+    max-width: 100%;
+    height: auto;
+    width: auto; /* Add this property to maintain the original image width */
+    max-height: 300px; /* Adjust the value to your desired maximum image height */
+  }
+}

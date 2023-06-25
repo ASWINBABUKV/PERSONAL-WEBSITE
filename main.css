@@ -166,14 +166,14 @@ section {
   animation-fill-mode: forwards;
   padding-bottom: 100px;
 }
-img {
-  border-radius: 70%;
-}
 .pic {
   display: flex;
   height: 300px;
   width: 300px;
   margin: 120px 100px 100px 5px;
+}
+.pic1 {
+  border-radius: 70%;
 }
 .hometext {
   align-self: center;
@@ -264,5 +264,45 @@ img {
 .arrow i {
   font-size: 24px;
 }
-#about {
+/*ABOUT*/
+.top-text {
+  margin-top: 45px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.box-line {
+  width: 1000px;
+  height: 500px;
+  border: 1px solid transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: perspective(1000px) rotateX(5deg);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.box-line:hover {
+  transform: perspective(800px) rotateX(0deg);
+}
+.box-line h1 {
+  font-size: 32px;
+}
+.college {
+  width: 150px;
+  height: 75px;
+}
+.school {
+  width: 200px;
+  height: 90px;
+}
+.box-line h4 {
+  font-size: 15px;
+}
+.box-line h3 {
+  font-size: 20px;
 }
